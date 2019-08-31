@@ -13,7 +13,7 @@ label splashscreen:
 
     return
 
-label quit:
+label quit_game:
     python:
         try:
             renpy.quit(relaunch=False)

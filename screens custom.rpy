@@ -136,7 +136,7 @@ screen battle_screen:
     add MouseTracker() #relates drags and clicks to the viewport and the BM
 
     if config.developer: #a release version should have set this to False
-        key "Q" action Jump(['quit'])  ##DEBUG FAST QUIT##
+        key "Q" action Jump(['quit_game'])  ##DEBUG FAST QUIT##
         key "A" action Return(['anime'])
         if BM.phase != 'formation':
             key "P" action Return(['I WIN'])

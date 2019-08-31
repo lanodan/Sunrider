@@ -84,7 +84,7 @@ screen say:
 
 screen devconsole:
     textbutton "Tweak stats" xpos 0.85 ypos 0.05 action None
-    textbutton "quit" xpos 0.85 ypos 0.08 action Jump('quit')
+    textbutton "quit" xpos 0.85 ypos 0.08 action Jump('quit_game')
     textbutton "Back" xpos 0.85 ypos 0.11 action Hide("devconsole", transition=None)
 
 

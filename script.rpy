@@ -1,4 +1,4 @@
-﻿## this is the main script file; everything starts here
+## this is the main script file; everything starts here
 ## the goal is to offload as much declaring to the init module and jump
 ## back here for main control
 

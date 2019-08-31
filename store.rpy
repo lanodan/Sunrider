@@ -52,7 +52,7 @@ screen store_union:
                     for item in store_items:
                         if item.isVisible():
                             imagebutton:
-                                action If(BM.money >= item.cost and (eval(item.variable_name) is None or eval(item.variable_name) < item.max_amt),[Play('sound1','Sound/kaching.ogg'),item],NullAction())
+                                action If(BM.money >= item.cost and (item.variable_name is None or eval(item.variable_name) < item.max_amt),[Play('sound1','Sound/kaching.ogg'),item],NullAction())
                                 idle "Menu/store_item.png"
                                 hover "Menu/store_item_hover.png"
                                 hovered SetField(BM,'hovered',item.id)

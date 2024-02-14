@@ -680,7 +680,7 @@ init python:
                     if spawn_count >= max:
                         spawning = False
 
-                if ship.faction is not 'Player':
+                if ship.faction != 'Player':
                     if BM.turn_count <= 5:
                         enemy_ships[-1].money_reward *= 1.0 - (0.2*BM.turn_count)
                     else:
